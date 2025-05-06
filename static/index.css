@@ -1,0 +1,159 @@
+img {
+    width: 50px;
+    height: 50px;
+}
+
+#chat-title-div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#chat-window {
+    height: clamp(256px, 64dvh, 512px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+}
+
+.bot-chat-bubble {
+    border-radius: 15px;
+    background-color: rgba(57, 192, 237, .2);
+}
+
+.user-chat-bubble {
+    border-radius: 15px;
+}
+
+#chat .form-outline .form-control ~ .form-notch div {
+    pointer-events: none;
+    border: 1px solid #eee;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: transparent;
+}
+
+#chat .form-outline .form-control ~ .form-notch .form-notch-leading {
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-right: none;
+    border-radius: .65rem 0 0 .65rem;
+}
+
+#chat .form-outline .form-control ~ .form-notch .form-notch-middle {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    max-width: calc(100% - 1rem);
+    height: 100%;
+    border-right: none;
+    border-left: none;
+}
+
+#chat .form-outline .form-control ~ .form-notch .form-notch-trailing {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    height: 100%;
+    border-left: none;
+    border-radius: 0 .65rem .65rem 0;
+}
+
+#chat .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
+    border-top: 0.125rem solid #39c0ed;
+    border-bottom: 0.125rem solid #39c0ed;
+    border-left: 0.125rem solid #39c0ed;
+}
+
+#chat .form-outline .form-control:focus ~ .form-notch .form-notch-leading,
+#chat .form-outline .form-control.active ~ .form-notch .form-notch-leading {
+    border-right: none;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#chat .form-outline .form-control:focus ~ .form-notch .form-notch-middle {
+    border-bottom: 0.125rem solid;
+    border-color: #39c0ed;
+}
+
+#chat .form-outline .form-control:focus ~ .form-notch .form-notch-middle,
+#chat .form-outline .form-control.active ~ .form-notch .form-notch-middle {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#chat .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+    border-top: 0.125rem solid #39c0ed;
+    border-bottom: 0.125rem solid #39c0ed;
+    border-right: 0.125rem solid #39c0ed;
+}
+
+#chat .form-outline .form-control:focus ~ .form-notch .form-notch-trailing,
+#chat .form-outline .form-control.active ~ .form-notch .form-notch-trailing {
+    border-left: none;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#chat .form-outline .form-control:focus ~ .form-label {
+    color: #39c0ed;
+}
+
+#chat .form-outline .form-control ~ .form-label {
+    color: #bfbfbf;
+}
+
+#chat {
+    border-radius: 15px;
+}
+
+div.disabled {
+    pointer-events: none;
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
+    user-select: none;
+}
+
+div.disabled *:focus {
+    outline: 0;
+}
+
+#login-div {
+    position: fixed;
+    z-index: 2;
+    inset: 0;
+    width: 30rem;
+    height: 20rem;
+    max-width: 100dvw;
+    max-height: 100dvh;
+    margin: auto;
+    background: #fff;
+    -webkit-box-shadow: 0.125rem 0 0.5rem #bfbfbf;
+            box-shadow: 0.125rem 0 0.5rem #bfbfbf;
+}
+
+#login-form > div {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+}
+
+#chat-title {
+    margin-right: 25%;
+}
