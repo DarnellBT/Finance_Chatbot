@@ -82,9 +82,3 @@ If at any point the user would like to change the company being analysed or the 
 
 + Can I look at a different year?
 + Can I look at a different company?
-
----
-
-## Limitations
-
-Some limitations of the chatbot are that it can only talk about preset topics and that data for each company are only from three different years for each.
