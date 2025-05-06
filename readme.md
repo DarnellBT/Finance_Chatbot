@@ -1,4 +1,4 @@
-# BCG X Financial Chat bot
+# Financial Chat bot
 
 ---
 
